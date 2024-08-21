@@ -22,6 +22,8 @@
                 clifford: '#da373d',
                 btn_primary:'#ABEF5F',
                 bg_primary:'#F4F4F4',
+                _black:'#1C1C1C',
+                rgba:'rgba(171, 239, 95, 0.50)',
               },
               fontFamily:{
                 manrope: "Manrope",
@@ -32,8 +34,63 @@
       </script>
 </head>
 <body class="font-manrope">
-    <header>
-        
+    <header class="bg-gradient-to-t from-[#FFF] to-bg_primary">
+        <div class="container mx-auto">
+            <!-- navigation -->
+        <div class="navbar justify-between">
+            <div class="navbar-start">
+              
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-arrow-right -rotate-45 p-1 rounded-full bg-btn_primary text-black"></i><!--green-->
+                <a class="text-3xl font-extrabold">Rinterio</a>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[#737373]">
+                <li><a class="text-[#494949] font-extrabold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden md:flex gap-3">
+                <div class="bg-[#FFF] p-3 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="bg-[#FFF] p-3 rounded-full"><i class="fa-solid fa-cart-shopping"></i></div>
+              <a class="btn font-bold bg-btn_primary rounded-full ">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 p-1 rounded-full bg-_black text-white"></i></a>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden rounded-full bg-[#FFF]">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                  <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+          </div>
+          <!-- banner  -->
+          <div class="card">
+            <figure class="px-10 pt-10">
+              <img
+                src="assets/banner.png"
+                alt="Shoes"
+                class="rounded-xl w-4/5 md:w-3/5" />
+            </figure>
+            <div class="card-body items-center text-center space-y-4">
+              <h2 class="card-title text-3xl lg:text-6xl font-bold md:font-extrabold">A barn house of this design has a striking appearance</h2>
+              <p class="max-w-[972px] mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              <div class="card-actions flex">
+                <button class="btn bg-rgba font-bold border border-btn_primary rounded-full hover:bg-rgba w-72 md:w-auto">View Details <i class="fa-solid fa-arrow-right -rotate-45 p-1 rounded-full bg-btn_primary text-black"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
     </header>
     <main>
 
